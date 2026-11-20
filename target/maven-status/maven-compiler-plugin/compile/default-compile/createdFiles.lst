@@ -1,0 +1,15 @@
+model\Dish0.class
+server\ServerRunner.class
+model\Manager0.class
+dao\CategoryDAO0.class
+dao\ComboDAO0.class
+model\Customer0.class
+dao\DishDAO0.class
+dao\UserDAO0.class
+model\Category0.class
+model\User0.class
+model\Combo0.class
+dao\InitDatabaseRunner.class
+model\ComboDetail0.class
+model\Staff0.class
+dao\DAO0.class

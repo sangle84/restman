@@ -1,0 +1,304 @@
+/* ==========================================================
+   RestMan - Minimalist, Clean & Professional Stylesheet
+   Chuẩn giao diện Đồ án / Bài tập lớn Công nghệ phần mềm
+   ========================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #f8f9fa;
+    color: #212529;
+    line-height: 1.5;
+    padding: 20px 0;
+}
+
+/* Khung nội dung chính căn giữa */
+.container {
+    max-width: 940px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 28px 36px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+
+/* Tiêu đề */
+h2 {
+    text-align: center;
+    color: #1a252f;
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 24px;
+    padding-bottom: 12px;
+    border-bottom: 2px solid #f1f3f5;
+    letter-spacing: 0.5px;
+}
+
+h3 {
+    color: #2c3e50;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 20px 0 12px 0;
+}
+
+/* Đoạn văn bản & lời chào */
+.welcome-text {
+    text-align: center;
+    font-size: 16px;
+    color: #495057;
+    margin-bottom: 24px;
+}
+
+.welcome-text b {
+    color: #0d6efd;
+}
+
+/* Form tìm kiếm và hàng điều khiển */
+.search-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    flex-wrap: wrap;
+}
+
+.search-form label {
+    font-weight: 500;
+    color: #495057;
+}
+
+/* Ô nhập liệu & Select */
+input[type="text"],
+input[type="password"],
+input[type="number"],
+select,
+textarea {
+    padding: 8px 12px;
+    font-size: 14px;
+    color: #212529;
+    background-color: #fff;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    transition: border-color 0.15s ease-in-out;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+select:focus,
+textarea:focus {
+    outline: none;
+    border-color: #0d6efd;
+    box-shadow: 0 0 0 3px rgba(13, 110, 253, 0.15);
+}
+
+/* Nút bấm */
+.btn,
+input[type="submit"],
+button {
+    display: inline-block;
+    font-weight: 500;
+    font-size: 14px;
+    padding: 8px 16px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 4px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    transition: background-color 0.15s ease, border-color 0.15s ease;
+}
+
+.btn-primary,
+input[type="submit"] {
+    background-color: #0d6efd;
+    color: #ffffff;
+    border-color: #0d6efd;
+}
+
+.btn-primary:hover,
+input[type="submit"]:hover {
+    background-color: #0b5ed7;
+    border-color: #0a58ca;
+}
+
+.btn-secondary {
+    background-color: #f1f3f5;
+    color: #495057;
+    border-color: #ced4da;
+}
+
+.btn-secondary:hover {
+    background-color: #e9ecef;
+    color: #212529;
+}
+
+.btn-danger,
+.btn-delete {
+    background-color: #fff;
+    color: #dc3545;
+    border-color: #dc3545;
+    padding: 4px 10px;
+    font-size: 13px;
+}
+
+.btn-danger:hover,
+.btn-delete:hover {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-link {
+    background-color: transparent;
+    color: #0d6efd;
+    text-decoration: underline;
+    padding: 4px 8px;
+    font-size: 13px;
+}
+
+.btn-link:hover {
+    color: #0a58ca;
+}
+
+/* Bảng hiển thị dữ liệu */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 16px 0 24px 0;
+    font-size: 14px;
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+}
+
+table th {
+    background-color: #f8f9fa;
+    color: #495057;
+    font-weight: 600;
+    text-align: left;
+    padding: 10px 14px;
+    border: 1px solid #dee2e6;
+}
+
+table td {
+    padding: 10px 14px;
+    border: 1px solid #dee2e6;
+    vertical-align: middle;
+}
+
+table tbody tr:hover {
+    background-color: #fcfcfd;
+}
+
+/* Căn chỉnh cột bảng */
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+    white-space: nowrap;
+}
+
+.price-text {
+    font-weight: 600;
+    color: #198754;
+}
+
+/* Khung chi tiết (Form 2 cột) */
+.detail-table {
+    border: none;
+    margin: 20px 0;
+}
+
+.detail-table td {
+    border: none;
+    padding: 8px 12px;
+}
+
+.detail-table td:first-child {
+    font-weight: 600;
+    color: #495057;
+    width: 160px;
+    text-align: right;
+    vertical-align: top;
+}
+
+/* Box hành động */
+.action-box {
+    text-align: center;
+    margin: 32px 0 16px 0;
+}
+
+.action-box .btn {
+    font-size: 15px;
+    padding: 10px 24px;
+}
+
+.logout-box,
+.back-box {
+    text-align: center;
+    margin-top: 28px;
+    padding-top: 16px;
+    border-top: 1px solid #e9ecef;
+}
+
+/* Thông báo thành công / lỗi */
+.msg-success {
+    background-color: #d1e7dd;
+    color: #0f5132;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid #badbcc;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+.msg-error {
+    background-color: #f8d7da;
+    color: #842029;
+    padding: 12px 16px;
+    border-radius: 4px;
+    border: 1px solid #f5c2c7;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 500;
+}
+
+/* Section divider trong Add Combo */
+.section-box {
+    background-color: #ffffff;
+    border: 1px solid #dee2e6;
+    border-radius: 6px;
+    padding: 20px 24px;
+    margin-bottom: 24px;
+}
+
+.form-grid {
+    display: grid;
+    grid-template-columns: 140px 1fr;
+    gap: 12px 16px;
+    align-items: center;
+    max-width: 650px;
+    margin: 16px auto;
+}
+
+.form-grid label {
+    font-weight: 500;
+    color: #495057;
+    text-align: right;
+}
+
+.form-grid input[type="text"] {
+    width: 100%;
+}
+
+.form-grid .form-submit {
+    grid-column: 2;
+    margin-top: 8px;
+}
